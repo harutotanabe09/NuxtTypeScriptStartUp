@@ -30,9 +30,20 @@ yarn add -D stylelint-config-recommended-scss
 
 ### Style Very Hard
 yarn add -D stylelint-config-primer
+yarn add -D @primer/css
+
+custom stylelint.config.js
+　- add primer/colors 
+　- add primer/typography 
 
 ### packega.json Custom
 
 Add yarn lint:fix
 
+### Common Scss
 
+yarn add -D nuxtjs/style-resources
+
+custom nuxt.config.js
+
+linter set up
