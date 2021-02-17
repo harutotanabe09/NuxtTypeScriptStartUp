@@ -1,5 +1,4 @@
 ## Start
-
 ? Project name: knowledge
 ? Programming language: TypeScript
 ? Package manager: Yarn
@@ -28,7 +27,8 @@ yarn add -D node-sass
 yarn add -D sass-autoprefixer
 yarn add -D stylelint-config-recommended-scss
 
-### Style Very Hard
+### Style Very Hard Mode
+
 yarn add -D stylelint-config-primer
 yarn add -D @primer/css
 
@@ -43,7 +43,30 @@ Add yarn lint:fix
 ### Common Scss
 
 yarn add -D nuxtjs/style-resources
-
 custom nuxt.config.js
-
 linter set up
+
+### TODO LoadMap
+
+- Custom layout 
+- Custom page
+- Custom component
+
+- Add Common UI component
+- Add ts.file And TypeScript
+- Add Common CS assets
+
+- Add Transition
+- Add Computed
+- Add Method
+- Add Data
+- Add Axios And 型定義
+- Add Async And Await!!!
+- Add NuxtLink and await 
+- Add Fetch
+
+- Add Parent And Childe
+-- props
+-- emit
+
+- ::v-deep
