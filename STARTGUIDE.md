@@ -13,3 +13,26 @@
 ? Continuous integration: None
 ? What is your GitHub username? harutotanabe
 ? Version control system: Git
+
+### Library
+
+#### Common
+yarn add moment
+yarn add lodash
+yarn add vee-validate
+yarn add vue-chartjs
+
+### Style
+yarn add -D sass-loader
+yarn add -D node-sass
+yarn add -D sass-autoprefixer
+yarn add -D stylelint-config-recommended-scss
+
+### Style Very Hard
+yarn add -D stylelint-config-primer
+
+### packega.json Custom
+
+Add yarn lint:fix
+
+
