@@ -1,10 +1,1001 @@
+/* stylelint-disable primer/no-unused-vars */
+
+// Palette
+//
+// Do not use these colors directly.
+// Must follow primer format
+// see: https://github.com/primer/stylelint-config-primer/tree/master/plugins#primercolors
+// and: https://github.com/primer/stylelint-config-primer/blob/master/plugins/colors.js
+$font-color-red: #96514d;
+$font-color-brown: #bf794e;
+$text-green: #00a497;
+
 $default-color: #f7f8fa;
 $bg-white: #ededed;
 $bg-gray: #eaf2f8;
 $primary-color: #2993ff;
 $white-color: #fff;
 $black-color: #000;
+$black-transparent: #160203;
+$black-transparent-2: rgba(0, 0, 0, 0.9);
+$black-transparent-5: rgba(0, 0, 0, 0.5);
+$black-transparent-light: rgba(#000, 0.16);
+$primary-color-light: #e1e9f8;
+$blue: #2c94d5;
+$blue-2: #0f86ff;
+$blue-3: #29a4ef;
+$blue-4: #29a4ff;
+$blue-5: #2993ff;
+$blue-6: #006fc2;
+$skyblue: #429fd9;
+$skyblue-2: #c1f5ff;
+$skyblue-3: #e1e9f8;
+$light-skyblue: #27c3eb;
+$link-hover: #53BEFF;
+$blue-7: #3B9CFF;
+$dark-blue-color: #434a5e;
+$light-green-color: #daface;
+$green: #0ead00;
+$green-2: #8AD513;
+$light-green: #daface;
+$red: #fd4949;
+$light-red: #ffdada;
+$danger-color: #ee6b5e;
+$orange: #ff7926;
+$lighter-orange: #f48d16;
+$light-orange: #ffb44d;
+$light-orange2: #FFD753;
+$input-border-color: #afafaf;
+$gray: #afafaf;
+$gray-2: #ccc;
+$gray-3: #d9d9d9;
+$gray-4: #dadada;
+$gray-5: #ddd;
+$gray-6: #717171;
+$gray-7: #434a5e;
+$gray-8: #95989a;
+$gray-9: #d8d8d8;
+$gray-10: #adadad;
+$gray-11: #F0F1F2;
+$gray-12: #E1E5EB;
+$gray-color: #888;
+$dark-gray: #707070;
+$light-gray-color: #dbdbdb;
+$gray-transparent: #71717160;
+$dimmed-blue-color: #95979b;
+$dimmed-gray-color: #95989a;
+$placeholder-color: #afafaf;
+$login-input-border: #888;
+$error-bg-color: #ffdada;
+$error-color: #fd4949;
+$required-color: #ee6b5e;
+$sunny-color: #f49b34;
+$cloudy-color: #a8a8a8;
+$rainy-color: #058df0;
 
-$font-color-red: #96514d;
-$font-color-brown: #bf794e;
-$text-green: #00a497;
+$not-answered-num-bg-color: #8ad513;
+$answer-rate-border-color: #25d0d0;
+$answer-rate-bg-color: #fff;
+$answer-num-bg-color: #0ecc92;
+$delivery-num-bg-color: #009fa5;
+
+// Fonts
+//
+// Do not use directly.
+// Must follow primer format
+// prefix: $font-size-*
+// see: https://github.com/primer/stylelint-config-primer/blob/master/plugins/typography.js
+$font-size-tiny: 8px;
+$font-size-smaller: 10px;
+$font-size-small: 12px;
+$font-size-normal: 14px;
+$font-size-large: 20px;
+$font-size-9: 9px;
+$font-size-10: 10px;
+$font-size-11: 11px;
+$font-size-12: 12px;
+$font-size-13: 13px;
+$font-size-16: 16px;
+$font-size-17: 17px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-24: 24px;
+$font-size-25: 25px;
+$font-size-32: 32px;
+$font-size-36: 36px;
+$font-size-47: 47px;
+$font-size-49: 49px;
+$font-size-62: 62px;
+
+// FontWeights
+//
+// Do not use directly
+// Must follow primer format
+// prefix: $xfont-weight-*
+// see: https://github.com/primer/stylelint-config-primer/blob/master/plugins/typography.js
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+$font-weight-600: 600;
+$gray-color: #888;
+$light-gray-color: #dbdbdb;
+$dimmed-blue-color: #95979b;
+
+// FontFamily
+//
+// Do not use these colos directly
+$gothic: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'MS Pゴシック', sans-serif;
+
+// Lineheights
+//
+// Do not use directly.
+// Must follow primer format
+// prefix: $lh-*
+// see: https://primer.style/css/support/typography#typography-variables
+$lh-10: 10px;
+$lh-11: 11px;
+$lh-12: 12px;
+$lh-14: 14px;
+$lh-15: 15px;
+$lh-16: 16px;
+$lh-17: 17px;
+$lh-18: 18px;
+$lh-19: 19px;
+$lh-20: 20px;
+$lh-24: 24px;
+$lh-26: 26px;
+$lh-27: 27px;
+$lh-31: 31px;
+$lh-32: 32px;
+$lh-33: 33px;
+$lh-34: 34px;
+$lh-35: 35px;
+$lh-37: 37px;
+$lh-41: 41px;
+$lh-50: 50px;
+$lh-55: 55px;
+$lh-57: 57px;
+
+// Border
+//
+// Do not use directly.
+// Must follow primer format
+// see: https://primer.style/css/support/typography#typography-variables
+$border-wdith-default: 1px;
+$border-style: solid;
+$border-radius: 10px;
+$border-radius-12: 12px;
+$border-radius-circle: 50%;
+
+// Margins
+//
+// Do not use directly.
+$content-margin-left: 20px;
+$content-margin-right: 20px;
+
+// Parts
+// Header
+$header-height: 50px;
+// Footer
+$footer-height: 41px;
+
+// ========== Common CP Styles ==========
+//
+// For common usage.
+// Must be prefixed by single underscore and named as: ${goods name}_{category}
+
+// Category: body
+$font-size-body: $font-size-normal;
+$text-body: $black-color;
+$bg-body: linear-gradient(30deg, $bg-gray 50%, $bg-white);
+
+// Category: h2
+$font-size-h2: $font-size-large;
+$font-weight-h2: $font-weight-600;
+
+// Category: AppInput
+$bg-app-input: $white-color;
+$bg-app-input-invalid: $error-bg-color;
+$lh-app-input: $lh-14;
+$text-app-input-placeholder: $placeholder-color;
+$text-app-input-error: $error-color;
+
+// Category: input
+$input-padding: 7px 10px;
+$input-bg: #fff;
+$input-border: solid 1px $input-border-color;
+$input-border-radius: 12px;
+$input-line-height: 14px;
+$input-shadow-color: #7c7c7c29;
+$required-bg-color: rgba($required-color, 0.2);
+$optional-color: $dark-blue-color;
+$optional-bg-color: #dbdbdb;
+$mark-font-size: 9px;
+
+// Category: button
+$button-default-color: #434a5e;
+$button-background-primary-from: #0f86ff;
+$button-background-primary-to: #29a4ef;
+$button-background-secondary-from: #f48d16;
+$button-background-secondary-to: #ffb44d;
+
+// Category: header
+$user-img-size-header: 32px;
+$bg-header: $white-color;
+$box-shadow-header-dropdown: 0 3px 9px $black-transparent-light;
+$text-header-user-dept: $dark-blue-color;
+$text-header-user-logout: $primary-color;
+
+// Category: footer
+$font-size-footer: $font-size-small;
+$lh-footer: $lh-41;
+$line-height-footer: 41px;
+$text-footer: $white-color;
+$bg-footer: $dark-blue-color;
+$border-footer: $white-color;
+$border-width-footer: $border-wdith-default;
+
+// Category: error
+$font-size-error-large: 40px;
+$font-size-error-xlarge: 130px;
+$bg-error-color: #fff;
+$bg-error-color-back: #797a7a;
+$text-error-message: #4e4e4e;
+$bg-error-background: #f8f8f8;
+
+// Category: v-select
+$select-height: 38px;
+$vs-component-line-height: 25px;
+$vs-border-radius: $input-border-radius;
+$vs-border-color: $input-border-color;
+$vs-controls-color: $dark-blue-color;
+$vs-controls-size: 0.8;
+
+// Category: table
+$bg-table-head: $default-color;
+$text-color-table: $dark-blue-color;
+$bg-table-selected: $primary-color-light;
+
+// ========== Common SP Styles ==========
+//
+// For common usage.
+// Must be prefixed by single underscore and named as: ${goods name}_{category}
+$bg-sp-menu: $light-gray-color;
+
+// ========== Specific CP colors ==========
+//
+// For specific usage.
+// Must be prefixed by single underscore and named as: ${goodsname}_{specific}
+
+// Specific: AppBreadcrumb
+$font-size-app-breadcrumb: $font-size-small;
+$lh-app-breadcrumb: $lh-50;
+
+// Specific: AppTextarea
+$bg-app-textarea: $white-color;
+$lh-app-textarea: $lh-14;
+$border-app-textarea: $gray;
+
+// Specific: AppTab
+$text-app-tab: $primary-color;
+$border-app-tab: $primary-color;
+$box-shadow-app-tab: 0 7px 6px -6px rgba($gray-color, 0.54);
+$bg-app-tab-block: $white-color;
+$app-tab-block-height: 37px;
+$box-shadow-app-tab-block: 0 0 10px rgba($black-color, 0.16);
+$font-weight-app-tab-item: $font-weight-bold;
+
+// Specific: AppSelect
+$bg-app-select: $white-color;
+$bg-app-select-invalid: $error-bg-color;
+$text-app-select: $error-color;
+$bg-app-select-disabled: $bg-white;
+$text-app-select-disabled: $input-border-color;
+$bg-app-select-search: transparent;
+$fill-app-select-disabled-indicator: $input-border-color;
+$bg-app-select-disabled-indicator: transparent;
+
+// Specific: AppRequiredMark
+$font-size-app-required-mark: $font-size-9;
+$lh-app-required-mark: $lh-15;
+$text-app-required-mark: $required-color;
+$bg-app-required-mark: $required-bg-color;
+
+// Specific: AppRadioGroup
+$text-app-radio-group: $error-color;
+
+// Specific: AppRadio
+$box-shadow-app-radio: 0 0 7px $black-transparent;
+
+// Specific: AppPanel
+$bg-app-panel: $white-color;
+$box-shadow-app-panel: 0 3px 10px rgba($black-color, 0.16);
+
+// Specific: AppPagination
+$caret-size-caret-size: 8px;
+$caret-size-page-size: 26px;
+$text-app-pagination: $primary-color;
+$text-app-pagination-disabled: $dimmed-blue-color;
+$text-app-pagination-current: $white-color;
+$text-app-pagination-dash: $black-color;
+$bg-app-pagination-current: $primary-color;
+$lh-app-pagination: $lh-26;
+
+// Specific: AppOptionalMark
+$font-size-app-optional-mark: $font-size-9;
+$lh-app-optional-mark: $lh-15;
+$text-app-optional-mark: $optional-color;
+$bg-app-optional-mark: $optional-bg-color;
+
+// Specific: AppLoading
+$bg-app-loading: hsla(0, 0%, 100%, 0.9);
+$box-shadow-app-loading: 0 3px 9px $black-color;
+
+// Specific: AppDialog
+$bg-app-dialog: $black-transparent-5;
+$bg-app-dialog-dialog: $white-color;
+$box-shadow-app-dialog: 0 3px 9px $black-transparent-light;
+
+// Specific: AppDatepicker
+$bg-app-datepicker: $input-bg;
+$lh-app-datepicker: $lh-14;
+
+// Specific: AppCheckbox
+$box-size-app-checkbox: 18px;
+$bg-app-checkbox: $white-color;
+$bg-app-checkbox-checked: $primary-color;
+$border-app-checkbox: $gray;
+$border-app-checkbox-checked: $white-color;
+$box-shadow-app-checkbox: 0 3px 6px $input-shadow-color;
+
+// Specific: AppButton
+$font-size-app-button: $font-size-small;
+$font-weight-app-button: $font-weight-bold;
+$lh-app-button: $lh-16;
+$text-app-button-default: $primary-color;
+$text-app-button-default-hover: $white-color;
+$text-app-button-primary: $white-color;
+$text-app-button-secondary: $white-color;
+$text-app-button-secondary-hover: $white-color;
+$text-app-button-danger: $danger-color;
+$text-app-button-danger-hover: $white-color;
+$text-app-button-white: $button-default-color;
+$text-app-button-disable: $white-color;
+$bg-app-button-default: $white-color;
+$bg-app-button-default-hover: $primary-color;
+$bg-app-button-primary: linear-gradient(90deg, $blue-2, $blue-3);
+$bg-app-button-primary-hover: linear-gradient(90deg, $blue-7, $link-hover);
+$bg-app-button-secondary: linear-gradient(
+  90deg,
+  $lighter-orange,
+  $light-orange
+);
+$bg-app-button-secondary-hover: linear-gradient(90deg, $light-orange, $light-orange2);
+$bg-app-button-danger: $white-color;
+$bg-app-button-danger-hover: $danger-color;
+$bg-app-button-white: #fff;
+$bg-app-button-disable: $gray-9;
+$border-app-button-default: $primary-color;
+$border-app-button-danger: $danger-color;
+$box-shadow-app-button-primary: 0 3px 15px $gray-transparent;
+$box-shadow-app-button-secondary: 0 3px 15px $gray-transparent;
+
+
+// Specific: AppBanner
+$bg-app-banner: $dark-blue-color;
+
+// Specific: AppFlashMessage
+$font-size-app-flash-message-icon: $font-size-16;
+$font-size-app-flash-message-title: $font-size-18;
+$lh-app-flash-message-title: $lh-31;
+$text-app-flash-message-card-success: $green;
+$text-app-flash-message-card-fail: $red;
+$bg-app-flash-message-card-success: $light-green;
+$bg-app-flash-message-card-fail: $light-red;
+
+// Specific: AppUpload
+$text-app-upload: $primary-color;
+$font-size-app-upload: $font-size-12;
+
+// Specific: SideMenu
+$side-menu-width: 56px;
+$bg-side-menu: $gray-11;
+$bg-side-menu-switch: $gray-11;
+$bg-side-menu-switch-line: $black-color;
+$bg-side-menu-close: rgba($white-color, 0.5);
+$box-shadow-side-menu: 0 3px 5px $black-color;
+$switch-size-side-menu: 46px;
+$switch-size-open-width: 259px;
+$switch-size-border: $dark-blue-color;
+$bg-switch-size-close: $default-color;
+$box-shadow-side-menu: 0 3px 10px $black-transparent-light;
+
+// Specific: SideMenuItem
+$lh-side-menu-item: $lh-11;
+$font-size-menu-item-submenu: $lh-12;
+$text-side-menu-item-active-link: $white-color;
+$bg-side-menu-item-submenu: $gray-12;
+$bg-side-menu-item-active-link: transparent
+  linear-gradient(90deg, $blue-2 0%, $blue-4 100%) 70% 70% no-repeat padding-box;
+$caret-size-side-menu-item: 6px;
+
+// Specific: PlanCard
+$border-plan-card: $black-color;
+
+// Specific: settingImport
+$font-size-setting-import-label: $font-size-18;
+$font-size-setting-import-help: $font-size-11;
+$font-size-setting-import-title: $font-size-16;
+$text-setting-import-label: $dark-blue-color;
+$text-setting-import-help: $blue;
+$lh-setting-import: $lh-37;
+$border-setting-import: $black-transparent-2;
+$border-setting-import-table: $gray-3;
+$border-setting-import-help: $gray-4;
+$bg-setting-import: $white-color;
+$box-shadow-setting-import: 0 0 15px rgba(22, 2, 3, 0.16);
+
+// Specific: SettingTalentImports
+$box-shadow-setting-talent-import: 0 0 15px rgba(22, 2, 3, 0.16);
+$border-setting-talent-import: $black-transparent-2;
+$bg-setting-talent-import: $white-color;
+
+// Specific: TalentTable
+$font-size-talent-table-heading: $font-size-16;
+$font-size-talent-table-text: $font-size-normal;
+$font-weight-talent-table-heading: $font-weight-bold;
+$border-talent-table: #dadada;
+
+// Specigic: loginForm
+$bg-login-form: $white-color;
+$font-size-login-form-link: $font-size-13;
+$font-size-login-form-message: $font-size-13;
+$border-login-form: $primary-color;
+$login-button-size: 230px;
+
+// Password Dialog
+$text-app-dialog-password-reset-success: $green;
+$text-app-dialog-password-reset-error: $error-color;
+$font-size-password-reset-message: $font-size-13;
+
+// Specific: loginIndex
+$font-size-login-index: $font-size-13;
+$font-size-login-label: $font-size-10;
+$text-color-login-label: $gray-8;
+$text-color-link-color: $primary-color;
+$text-color-link-color-hover: $link-hover;
+
+// Specific: DashboardAnniversaryReport
+$chart-width-dashboard-annibersary: 300px;
+$font-size-dashboard-anniversary: $font-size-24;
+$font-size-dashboard-anniversary-guide: $font-size-25;
+$font-size-dashboard-anniversary-average-header: $font-size-small;
+$font-size-dashboard-anniversary-average-value: $font-size-36;
+$border-dashboard-anniversary: $gray-2;
+$box-shadow-dashboard-anniversary: 2px 2px 2px 3px $gray-2;
+$text-dashboard-anniversary-answered: $answer-num-bg-color;
+$text-dashboard-anniversary-dlivered: $not-answered-num-bg-color;
+$text-dashboad-anniversary-na: $gray;
+$text-dashboad-anniversary-empty: $dimmed-blue-color;
+
+// Specific: DashboardMonthlyReport
+$font-size-dashboard-monthly-heading: $font-size-18;
+$font-size-dashboard-monthly: $font-size-47;
+$font-size-dashboard-monthly-guide: $font-size-tiny;
+$font-size-dashboard-monthly-guide-bullet: $font-size-16;
+$font-size-dashboard-monthly-answer-rate: $font-size-small;
+$font-size-dashboard-monthly-answer-rate-number: $font-size-62;
+$border-dashboard-monthly: $gray-2;
+$box-shadow-dashboard-monthly: 2px 2px 2px 3px $gray-2;
+$text-dashboard-monthly-notyet: $not-answered-num-bg-color;
+$text-dashboard-monthly-sunny: $orange;
+$text-dashboard-monthly-cloudy: $cloudy-color;
+$text-dashboard-monthly-rainy: $rainy-color;
+
+// Specific DashboardNotifications
+$text-dashboard-notification-date: $blue-6;
+$lh-dashboard-notification: $lh-24;
+$font-size-dashboard-notification: $font-size-small;
+
+// Specific DashboardDownloadAnswers
+$font-size-dashboard-download-answers: $font-size-small;
+$border-color-tab: $light-gray-color;
+
+// Specific: DashboardSpecialNotifications
+$bg-dashboard-special-new-label: $error-color;
+$text-dashboard-special-new-text: $white-color;
+$text-dashboard-special-link: $primary-color;
+$border-radius-dashboard-special-new-label: $border-radius-12;
+$text-dashboard-special-title-text: $black-color;
+$text-dashboard-special-text: $dark-blue-color;
+$border-radius-dashboard-special-close: $border-radius-circle;
+$lh-dashboard-special-title: $lh-24;
+$lh-dashboard-special-text: $lh-17;
+$lh-dashboard-special-new-text: $lh-11;
+$lh-dashboard-special-link-text: $lh-17;
+$border-radius-dashboard-special-app-panel: $border-radius;
+
+// Specific: DashboardSeason
+$border-radius-dashboard-season: $border-radius;
+$font-size-dashboard-season-title: $font-size-small;
+$font-size-dashboard-season-text: $font-size-normal;
+$lh-dashboard-season-title: $lh-17;
+$lh-dashboard-season-text: $lh-19;
+
+// Specific: CumulativeBaseReport
+$font-size-cumulative-base-report: $font-size-25;
+$text-cumulative-base-report-answernum: $answer-num-bg-color;
+$text-cumulative-base-report-deliverynum: $delivery-num-bg-color;
+$text-cumulative-base-report-answerrate: $answer-rate-border-color;
+$text-cumulative-base-report-tooltip: $white-color;
+$bg-cumulative-base-report-tooltip: $black-color;
+
+// Specific: CumulativeConditionReport
+$font-size-cumulative-condition-report: $font-size-25;
+$text-cumulative-condition-report-sunny: #f49b34;
+$text-cumulative-condition-report-cloudy: #a8a8a8;
+$text-cumulative-condition-report-rainy: #058df0;
+$text-cumulative-condition-report-tooltip: $white-color;
+$bg-cumulative-condition-report-tooltip: $black-color;
+
+// Specific: ConditionCard
+$font-size-condition-card-text: $font-size-small;
+$font-size-condition-card-value: $font-size-24;
+$border-condition-card: $gray-2;
+
+// Specific: CumulativeReport
+$font-size-cumulative-report-title: $font-size-normal;
+$font-size-cumulative-report-types: $font-size-normal;
+$font-size-cumulative-report-charts: $font-size-16;
+$font-weight-cumulative-report-title: $font-weight-bold;
+$text-cumulative-report: $dark-blue-color;
+$text-cumulative-report-type: $dark-blue-color;
+$text-cumulative-report-type-selected: $primary-color;
+$lh-cumulative-report-title: $lh-19;
+$lh-cumulative-report-types: $lh-19;
+$bg-cumulative-report: $white-color;
+$bg-cumulative-report-types-selected: $primary-color;
+$border-cumulative-report-types: $light-gray-color;
+$box-shadow-cumulative-report: 0 3px 10px rgba(#000, 0.16);
+$box-shadow-cumulative-report-types-selected: 0 3px 6px rgba($gray-color, 0.54);
+
+// Specific: MonthlyReport
+$font-size-monthly-report-title: $font-size-normal;
+$font-size-monthly-report-condition-title: $font-size-18;
+$font-size-monthly-report-answer-title: $font-size-tiny;
+$font-size-monthly-report-condition-percent: $font-size-62;
+$font-size-monthly-report-guide: $font-size-16;
+$font-weight-monthly-report-title: $font-weight-bold;
+$font-weight-monthly-report-condition: $font-weight-bold;
+$text-monthly-report: $dark-blue-color;
+$text-monthly-report-guide-answered: $answer-num-bg-color;
+$text-monthly-report-guide-notyet: $not-answered-num-bg-color;
+$text-monthly-report-guide-sunny: $orange;
+$text-monthly-report-guide-cloudy: $gray;
+$text-monthly-report-guide-rainy: $primary-color;
+$text-member-csv: $dark-blue-color;
+$lh-monthly-report-title: $lh-19;
+$bg-monthly-report: $white-color;
+$bg-monthly-report-charts: $gray-5;
+$border-monthly-report-heading: $light-gray-color;
+$box-shadow-monthly-report: 0 3px 10px rgba($black-color, 0.16);
+
+// Specific: TemplateContent
+$font-size-template-content: $font-size-small;
+$font-size-template-content-table-header: $font-size-smaller;
+$font-size-template-content-thread-items: $font-size-smaller;
+$font-weight-template-content: $font-weight-bold;
+$font-weight-template-content-thread-value: $font-weight-bold;
+$text-template-content-explain: $dimmed-blue-color;
+$text-template-content-table-header: $dimmed-blue-color;
+$text-template-content-thread-variables: $dimmed-blue-color;
+$text-template-content-thread-value: $black-color;
+$border-template-content-thread: $input-border-color;
+$bg-template-content-thread: $white-color;
+
+// Specific: QuestionDetail
+$font-size-question-detail-chart: $font-size-25;
+$text-question-detail-tooltip: $white-color;
+$bg-question-detail-tooltip: $black-color;
+
+// Specific: ReportFilter
+$lh-report-filter: $lh-10;
+$font-size-report-filter: $font-size-smaller;
+$text-report-filter-label: $gray-8;
+$font-size-report-filter-filter: $font-size-12;
+$font-size-report-filter-from: $font-size-normal;
+$font-size-report-filter-to: $font-size-normal;
+$font-weight-report-filter-filter: $font-weight-bold;
+
+
+// Specific: TutorialContent
+$font-size-tutorial-content-heading: $font-size-32;
+$font-size-tutorial-content-text: $font-size-large;
+$font-weight-tutorial-content-heading: $font-weight-bold;
+$lh-tutorial-content-heading: $lh-55;
+$lh-tutorial-content-text: $lh-35;
+
+// Specific: MemberName
+$font-size-member-name-name: $font-size-normal;
+$font-size-member-name-department: $font-size-small;
+$font-size-member-name-datecontracted: $font-size-smaller;
+$text-member-name: $dimmed-blue-color;
+$text-member-name-name: $black-color;
+
+// Specific: MemberAnniversaries
+$text-member-anniversaries: $gray;
+
+// Specific: MemberAnswers
+$font-size-member-answers-weather: $font-size-small;
+$text-member-answers-weather: $green-2;
+$text-member-answers-weather-nothing: $black-color;
+
+// Specific: MemberDownload
+$font-size-member-download-text: $font-size-small;
+$font-size-member-download-heading: $font-size-large;
+$font-size-member-download-title: $font-size-large;
+$font-size-member-download-footer: $font-size-small;
+$lh-member-download-text: $lh-18;
+$lh-member-download-footer: $lh-16;
+$text-member-download-text: $primary-color;
+$border-member-download-heading: $light-gray-color;
+
+// Specific: MemberLatestAnswer
+$font-size-member-latest-answer-comment-count: $font-size-smaller;
+$text-member-latest-answer-comment-count: $dimmed-blue-color;
+
+// Specific: MemberSearch
+$close-button-size-member-search: 38px;
+$font-size-member-search-action: $font-size-small;
+$font-size-member-search-label: $font-size-smaller;
+$font-size-member-search-tilde: $font-size-large;
+$font-size-member-search-check: $font-size-small;
+$font-size-member-search-dialog-header: $font-size-large;
+$font-size-member-search-form-label: $font-size-smaller;
+$font-size-member-search-form-tilde: $font-size-large;
+$font-size-member-search-form-condition: $font-size-small;
+$font-size-member-search-form-contracted: $font-size-large;
+$font-weight-member-search-detail: $font-weight-bold;
+$text-member-search-detail: $primary-color;
+$text-member-search-label: $dimmed-blue-color;
+$text-member-search-tilde: $dimmed-blue-color;
+$text-member-search-form-label: $dimmed-blue-color;
+$text-member-search-form-tilde: $dimmed-blue-color;
+$text-member-search-form-contracted: $dimmed-blue-color;
+$lh-member-search-check-text: $lh-32;
+$border-member-search-dialog-header: $primary-color;
+$border-member-search-form: $light-gray-color;
+$bg-member-search: $default-color;
+
+
+// Specific: MemberStep
+$font-size-member-step: $font-size-16;
+$font-weight-member-step: $font-weight-bold;
+$font-size-member-step-text: $font-size-normal;
+
+// Specific: MemberCsv
+$font-size-member-csv-title: $font-size-20;
+$font-size-member-csv: $font-size-18;
+$font-size-member-csv-lead: $font-size-12;
+$font-size-member-csv-label: $font-size-10;
+$font-weight-member-csv: $font-weight-bold;
+$text-member-csv-created-success: $green;
+$text-member-csv-error: $error-color;
+$text-member-csv-text: $dark-blue-color;
+$bg-member-csv: $default-color;
+$bg-member-csv-error: $error-bg-color;
+$border-radius-member-csv: $border-radius;
+$border-member-csv: $light-gray-color;
+
+// Specific: MemberCsvUpdate
+$font-size-member-csv-update: $font-size-18;
+$font-size-member-csv-update-title: $font-size-20;
+$font-size-member-csv-update-lead: $font-size-12;
+$font-size-member-csv-update-label: $font-size-10;
+$font-weight-member-csv-update: $font-weight-bold;
+$text-member-csv-update-created-success: $green;
+$text-member-csv-update-error: $error-color;
+$text-member-csv-update-text: $dark-blue-color;
+$bg-member-csv-update: $default-color;
+$bg-member-csv-update-error: $error-bg-color;
+$border-radius-member-csv-update: $border-radius;
+$border-member-csv-update: $light-gray-color;
+
+// Specific: MemberDetail
+$text-member-detail-delete-color: $gray-6;
+$font-size-member-detail-delete: $font-size-smaller;
+$font-size-member-detail-label: $font-size-smaller;
+$text-size-member-detail-label-color: $dimmed-blue-color;
+$lh-member-detail-label: $font-size-normal;
+$bg-member-detail-tab: $default-color;
+$bg-member-detail-fields: $white-color;
+$bg-member-detail-close: $white-color;
+$box-shadow-member-detail-close: 0 0 10px rgba($black-color, 0.16);
+$font-size-member-detail-delete-heading: $font-size-large;
+$text-member-detail-delete-warning: $red;
+$font-size-member-detail-delete-warning: $font-size-small;
+$text-member-detail-enq-error: $error-color;
+$text-member-detail-enq-success: $green;
+
+// Specific: MemberMessage
+$bg-member-message-today: $gray-10;
+$bg-member-message-member: $white-color;
+$bg-member-message-user: $skyblue-2;
+$bg-member-message-message: $default-color;
+$bg-member-message-border: $light-gray-color;
+$bg-member-message-template: $light-green-color;
+$font-size-member-message-today: $font-size-smaller;
+$font-size-member-message-text: $font-size-small;
+$font-size-member-message-title: $font-size-normal;
+$font-size-member-message-template: $font-size-16;
+$font-size-member-message-error: $font-size-18;
+$font-size-member-message-dialog-title: $font-size-large;
+$font-weight-message: $font-weight-bold;
+$text-member-message: $gray-7;
+$text-member-message-today-color: $white-color;
+$text-member-message-name-color: $dimmed-blue-color;
+$text-member-message-template-color: $green;
+$text-member-message-error-color: $error-color;
+$border-color-member-message-accordion: $gray-10;
+$border-radius-member-message-box: $border-radius-12;
+
+
+// Specific: NotificationIndex
+$border-notification-index: $gray;
+
+// Specific: ConditionDetailReport
+$font-size-condition-detail-report: $font-size-smaller;
+$lh-condition-detail-report: $lh-10;
+
+// Specific: MessageSetting
+$font-size-message-setting-title: $font-size-18;
+$font-size-message-setting-header: $font-size-11;
+$font-size-message-setting-description: $font-size-12;
+$font-size-message-setting-body: $font-size-small;
+$text-message-setting-description: #434a5e;
+$bg-message-setting-header: #f7f8fa;
+$border-message-setting-row: #dbdbdb;
+
+// Specific: MessageRegister
+$font-size-message-register-title: $font-size-18;
+$font-size-message-register-description: $font-size-small;
+$font-size-message-register-label: $font-size-smaller;
+$font-size-message-register-templates: $font-size-smaller;
+$font-weight-message-register-description: $font-weight-bold;
+$font-weight-message-register-templates: $font-weight-bold;
+$text-message-register-description: $dark-blue-color;
+$text-message-register-label: $dimmed-blue-color;
+$text-message-register-templates: $dimmed-blue-color;
+
+// Specific: MessageAccordion
+$caret-size-message-accordion: 9px;
+$border-message-accordion: $black-color;
+
+// Specific: login
+$font-size-login-modal-message: $font-size-18;
+$lh-login-modal-message: $lh-18;
+$bg-login-modal: $white-color;
+$bg-login-modal-wrap: rgba($gray, 0.5);
+$box-shadow-login-modal: 0 3px 10px $black-transparent-light;
+
+// Specific: members
+$member-answers-text-color: $light-green-color;
+
+// Specific: member-index
+$font-size-member-index-head: $font-size-smaller;
+$font-size-member-index-note: $font-size-small;
+$text-member-index-link: $primary-color;
+$border-member-index: $light-gray-color;
+$border-member-index-caret: $dark-blue-color;
+$bg-member-index: $default-color;
+$lh-member-index-note: $lh-16;
+$text-member-index-created-success: $green;
+$text-member-index-select: $black-color;
+$text-member-index-count: $black-color;
+$lh-member-index-comment-text: $lh-17;
+
+// Specigic: message-index
+$bg-message-index: $default-color;
+$text-message-index-banner: $white-color;
+
+// Specific: message-detail
+$font-size-message-detail: $font-size-smaller;
+$text-message-detail-banner: $white-color;
+$bg-message-detail: $default-color;
+$bg-message-detail-member: $white-color;
+$border-message-detail: $light-gray-color;
+$bg-message-detail-user: $skyblue-2;
+
+// Specific: report-index
+$font-size-report-index: $font-size-large;
+$lh-report-index-title: $lh-27;
+
+// Specific: csv
+$border-csv: $gray;
+
+// Specific: import
+$border-import: $gray;
+
+// Specific: talent_import
+$border-talent-import: $gray;
+
+// Specific: CsvUpdate.vue
+$border-csv-update: $gray;
+
+// Specific: Faq
+$border-faq-heading: $black-color;
+$border-faq-item: $light-gray-color;
+$text-color-faq-description: $dark-blue-color;
+$text-color-faq-heading: $black-color;
+
+// Specific: tutorial
+$bg-tutorial: linear-gradient(to right, $light-skyblue, $skyblue);
+$bg-tutorial-hover: $blue;
+$bg-tutorial-start: $orange;
+$font-size-tutorial: $font-size-17;
+$font-size-tutorial-title: $font-size-32;
+$font-size-tutorial-preview: $font-size-16;
+$font-size-tutorial-table: $font-size-16;
+$font-weight-tutorial: $font-weight-bold;
+$font-weight-tutorial-title: $font-weight-bold;
+$text-tutorial: $white-color;
+$lh-tutorial: 1.5;
+$border-tutorial: $white-color;
+
+// Specific: MailTestPreview
+$font-size-mail-test-preview: $font-size-16;
+$font-weight-mail-test-preview: $font-weight-bold;
+$lh-mail-test-preview: $lh-20;
+$bg-mail-test-preview: $light-gray-color;
+
+// Specific: mail_personal
+$font-size-mail-personal: $font-size-16;
+$font-size-mail-personal-preview: $font-size-16;
+$font-size-mail-personal-table: $font-size-16;
+$lh-mail-personal: $lh-16;
+
+// Specific: mail_company
+$font-size-mail-company: $font-size-16;
+$font-size-mail-company-title: $font-size-32;
+$font-weight-mail-company: $font-weight-bold;
+
+// Specific: notification-index
+$font-size-notification-index-title: $font-size-20;
+$font-size-notification-index-info: $font-size-12;
+$font-size-notification-index-detail-title: $font-size-18;
+$font-size-notification-index-detail-date: $font-size-18;
+$font-size-notification-index-detail-body: $font-size-18;
+$text-notification-index-info-date: $blue-5;
+$text-notification-index-info-title: $gray-7;
+$text-notification-index-info-icon: $blue-5;
+$text-notification-index-detail-date: $dark-blue-color;
+$text-notification-index-detail-title: $black-color;
+$text-notification-index-detail-body: $dark-blue-color;
+$text-notification-index-detail-button: $primary-color;
+$lh-notification-index-title: $lh-34;
+$lh-notification-index-info: $lh-17;
+$lh-notification-index-detail-title: $lh-24;
+$bg-notification-index: $white-color;
+$bg-notification-index-card-hover: $skyblue-3;
+$bg-notification-index-detail-button: $white-color;
+$box-shadow-notification-index: 0 3px 10px $gray-transparent;
+$box-shadow-notification-index-detail: 0 3px 10px $gray-transparent;
+$border-notification-index: $light-gray-color;
+$border-notification-index-detail-button: $primary-color;
+
+// ========== Specific SP colors ==========
+//
+// For specific usage.
+// Must be prefixed by single underscore and named as: ${goodsname}_{specific}
+
+// Specigic: SpHeader
+$font-size-sp-header: $font-size-24;
+
+// Specific: SpMember
+$border-sp-member: $gray;
+
+// SpecificL SpMemberIndex
+$tab-height-sp-member-index: 40px;
+$ctrl-height-sp-member-index: 40px;
+
+// Specific: SpMemberListCtrl
+$bg-sp-member-list-ctrl: $light-gray-color;
+
+// Specific: SpMemberSearch
+$bg-sp-member-search-forms: $white-color;
+$border-sp-member-search-tab-active: $gray;
+$border-sp-member-search-form-label: $gray;
+
+// Specific: SpMemberTabs
+$bg-sp-member-tabs-active: $gray;
+$border-sp-member-tabs: $gray;
+
+// Specific: member-form
+$member-form-padding: 30px;
+$member-form-padding-bottom: 38px;
+$bg-member-form-image-placehoder: $light-gray-color;
+$bg-member-form-camera-icon: $white-color;
+$text-member-form-label-color: $dimmed-blue-color;
+$text-member-form-error-color: $error-color;
+$bg-member-form-content-color: $default-color;
+$bg-member-form-section-color: $white-color;
+$text-member-form-add-senior-color: $primary-color;
+$text-member-form-senior-label: $dimmed-gray-color;
+
+// Specific: enq-page
+$font-size-enq-page-title: $font-size-20;
+$lh-enq-page-title: $lh-34;
+$border-enq-page: $light-gray-color;
+$box-shadow-enq-page: 0 3px 10px rgba($black-color, 0.29);
+$bg-enq-page: $white-color;
+
+// Specific: EnqInitial
+$border-enq-initial: $light-gray-color;
+$font-size-enq-initial-form-title: $font-size-18;
+$font-size-enq-initial-form-label: $font-size-small;
+$font-size-enq-initial-form-comment: $font-size-small;
+$font-size-enq-initial-preview-sup-title: $font-size-smaller;
+$font-size-enq-initial-preview-sup-comment: $font-size-smaller;
+$font-weight-enq-initial-form-title: $font-weight-bold;
+$text-enq-initial-preview-sup-title: $primary-color;
+$text-enq-initial-preview-sup-comment: $gray-6;
+$lh-enq-initial-form-comment: $lh-20;
+$lh-enq-initial-form-label: $lh-20;
+$lh-enq-initial-preview-sup-title: $lh-20;
+$lh-enq-initial-preview-sup-comment: $lh-17;
+
+// Specific EnqAnnualFrame
+$font-size-enq-annual-frame-heading: $font-size-18;
+$font-size-enq-annual-frame-description: $font-size-small;
+$lh-enq-annual-frame-description: $lh-20;
+$text-enq-annual-frame-label: $dark-gray;
+$font-size-enq-annual-frame-label: $font-size-small;
+
+// Specific EnqAnnualConfirmationMailForm
+$text-preview-header: $primary-color;
+$text-preview-desc: $dark-gray;
+
+// Specific: EnqMonthlyFrame
+$font-size-monthly-frame-heading: $font-size-18;
+$font-size-monthly-frame-description: $font-size-12;
+$font-weight-monthly-frame-heading: $font-weight-bold;
+
+// Specific: EnqMonthlyThanksMail
+$font-size-monthly-thanks-form-part-title: $font-size-12;
+$text-monthly-thanks-form-part-title: $dark-gray;
+
+// Specific: EnqMonthlyNotification
+$border-monthly-notification-preview-border: $light-gray-color;
+$font-size-monthly-notification-form-part-title: $font-size-12;
+$font-size-monthly-notification-preview-title: $font-size-12;
+$font-size-monthly-notification-preview-desc: $font-size-10;
+$text-monthly-notification-form-part-title: $dark-gray;
+$text-monthly-notification-preview-title: $primary-color;
+$text-monthly-notification-preview-desc: $dark-gray;
+
+// Specific: EnqNotification
+$font-size-enq-notification: $font-size-12;
+$font-size-enq-notification-section-title: $font-size-24;
+$text-enq-notification: $dark-blue-color;
+$text-enq-notification-link: $primary-color;
+$text-enq-notification-section-title: $black-color;
+$lh-enq-notification: $lh-20;
+$lh-enq-notification-section-title: $lh-41;
+$lh-enq-notification-section-title-app: $lh-57;
+$border-enq-notification-section: $light-gray-color;
+
+// Specific: SecurityLog
+$text-security-log-label: $dimmed-gray-color;
+$text-security-log-text: $dark-blue-color;
+$text-security-log-download: $primary-color;
+$text-security-log-overlay-anchor: $blue-6;
+$font-size-security-log-label: $font-size-smaller;
+$font-size-security-log-text: $font-size-small;
+$font-size-security-log-title: $font-size-18;
+$font-size-security-log-overlay: $font-size-20;
+$bg-security-log: $default-color;
+$bg-security-log-overlay: $white-color;
+$border-security-log: $light-gray-color;
+$lh-security-log-text: $lh-18;
+
+// Specific: SettingIndex
+$border-setting-index-head: $light-gray-color;

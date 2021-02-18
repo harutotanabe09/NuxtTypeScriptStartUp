@@ -48,13 +48,17 @@ linter set up
 
 ### TODO LoadMap
 
-- Custom layout 
-- Custom page
-- Custom component
+- [x] Custom layout 
+  →　Layoutフォルダ
+- [x] Custom page
+  →　Pageフォルダ
+- [x] Custom component
+  →　Componentフォルダ
 
-- Add Common UI component
+- [x] Add Common UI component AppButton
+  →　Componentフォルダ。AppButton
 - Add ts.file And TypeScript
-- Add Common CS assets
+- [X] Add Common CS assets
 
 - Add Transition
 - Add Computed
