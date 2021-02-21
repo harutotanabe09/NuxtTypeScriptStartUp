@@ -5,8 +5,9 @@
     </div>
   </div>
 </template>
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
   data() {
     return {
       chartOptions: {
@@ -38,10 +39,10 @@ export default {
       }
     },
   },
-}
+})
 </script>
 
-<style>
+<style lang="scss" scoped>
 .small {
   max-width: 600px;
   margin: 150px auto;

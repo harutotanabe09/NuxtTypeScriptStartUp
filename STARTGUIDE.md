@@ -28,7 +28,6 @@ yarn add -D sass-autoprefixer
 yarn add -D stylelint-config-recommended-scss
 
 ### Style Very Hard Mode
-
 yarn add -D stylelint-config-primer
 yarn add -D @primer/css
 
@@ -61,11 +60,20 @@ linter set up
 - [X] Add Common CS assets
 
 - Add Graph
-- [] Add vue-chartjs
+- [x] Add vue-chartjs
+- [x] Add yarn add vue-chartjs 
+- [x] Add yarn add chartjs-plugin-datalabels
+- [x] Add plugins/vue-chart.ts
+- [x] Add nuxt.config plugin set
 
 - Add Transition
+
 - Add Computed
+算出プロパティとMethodの違いを要チェック
+https://jp.vuejs.org/v2/guide/computed.html
+
 - Add Method
+
 - Add Data
 - Add Axios And 型定義
 - Add Async And Await!!!
