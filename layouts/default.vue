@@ -4,8 +4,8 @@
   </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
 .app {
-  color: $text-black;
+  color: $text-body;
 }
 </style>

@@ -56,9 +56,12 @@ linter set up
   →　Componentフォルダ
 
 - [x] Add Common UI component AppButton
-  →　Componentフォルダ。AppButton
+　Componentフォルダ。AppButton
 - Add ts.file And TypeScript
 - [X] Add Common CS assets
+
+- Add Graph
+- [] Add vue-chartjs
 
 - Add Transition
 - Add Computed

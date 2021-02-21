@@ -25,10 +25,13 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/axios": "^5.12.5",
+    "chart.js": "^2.9.4",
+    "chartjs-plugin-datalabels": "^0.7.0",
     "core-js": "^3.8.3",
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "vue-chartjs": "^3.5.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",

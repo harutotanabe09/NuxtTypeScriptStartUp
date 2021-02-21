@@ -1,7 +1,9 @@
 <template>
   <div class="app">
-    <div class="first-page">aaaaqqaaaaa</div>
-    <app-button>登録</app-button>
+    <app-button>登録</app-button><br />
+    <app-button type="danger">登録</app-button><br />
+    <app-button type="secondary">登録</app-button><br />
+    <app-button type="primary">登録</app-button><br />
   </div>
 </template>
 

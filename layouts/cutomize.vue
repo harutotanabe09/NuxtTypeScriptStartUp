@@ -1,6 +1,5 @@
 <template>
   <div class="pc-layout">
-    <side-menu class="side" />
     <div class="body">
       <div>Common Layout</div>
       <Nuxt class="content" />
