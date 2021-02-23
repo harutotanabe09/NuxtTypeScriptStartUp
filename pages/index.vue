@@ -7,6 +7,7 @@
         <NuxtLink to="/button">Button</NuxtLink><br />
         <NuxtLink to="/grah">Grah</NuxtLink><br />
         <NuxtLink to="/computed">Computed</NuxtLink><br />
+        <NuxtLink to="/types">Types</NuxtLink><br />
       </div>
     </div>
   </div>
