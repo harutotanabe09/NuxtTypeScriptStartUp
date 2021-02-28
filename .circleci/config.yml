@@ -1,26 +1,19 @@
-version: 2.1
+version: '2.1'
 orbs:
   node: circleci/node@4.2.0
 jobs:
-  build:
+  test:
     executor:
-        name: node/node
-        tag: 'latest'
-    working_directory: ~/repo
+      name: node/default
+      tag: '12'
     steps:
       - checkout
-      - node/install:
-          install-yarn: true
-      - node/with_cache:
-          dir: ~/repo/node_modules
-          cache-version: v1
-          steps:
-          - run: npm install
-          - run:
-              name: build
-              command: npm run build
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          name: Run YARN tests
+          command: yarn run test
 workflows:
-  version: 2
-  build:
+  test_my_app:
     jobs:
-      - build
+      - test
