@@ -14,8 +14,8 @@ jobs:
           name: Run YARN tests
           command: yarn build
       - run:
-          name: ls -la 
-          command: file list 
+          name: file list 
+          command: ls -la
 workflows:
   test_my_app:
     jobs:
