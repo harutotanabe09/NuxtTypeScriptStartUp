@@ -1,9 +1,9 @@
 <template>
   <div class="app">
-    <app-button>登録</app-button><br />
-    <app-button type="danger">登録</app-button><br />
-    <app-button type="secondary">登録</app-button><br />
-    <app-button type="primary">登録</app-button><br />
+    <app-button>ボタン</app-button><br />
+    <app-button type="danger">ボタン</app-button><br />
+    <app-button type="secondary">ボタン</app-button><br />
+    <app-button type="primary">ボタン</app-button><br />
   </div>
 </template>
 
