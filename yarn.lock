@@ -9188,14 +9188,6 @@ sass-loader@^10.1.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass-loader@^11.0.1:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-11.0.1.tgz#8672f896593466573b904f47693e0695368e38c9"
-  integrity sha512-Vp1LcP4slTsTNLEiDkTcm8zGN/XYYrZz2BZybQbliWA8eXveqA/AxsEjllQTpJbg2MzCsx/qNO48sHdZtOaxTw==
-  dependencies:
-    klona "^2.0.4"
-    neo-async "^2.6.2"
-
 sass-resources-loader@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/sass-resources-loader/-/sass-resources-loader-2.1.1.tgz#a231b7c4e326d9c8d141909c901233bef9453151"
@@ -9916,10 +9908,10 @@ stylelint-config-prettier@^8.0.2:
   resolved "https://registry.yarnpkg.com/stylelint-config-prettier/-/stylelint-config-prettier-8.0.2.tgz#da9de33da4c56893cbe7e26df239a7374045e14e"
   integrity sha512-TN1l93iVTXpF9NJstlvP7nOu9zY2k+mN0NSFQ/VEGz15ZIP9ohdDZTtCWHs5LjctAhSAzaILULGbgiM0ItId3A==
 
-stylelint-config-primer@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-primer/-/stylelint-config-primer-10.0.0.tgz#f56e39e0b504757d5e150d9da821c5b78712d487"
-  integrity sha512-NbH81OCJypW6p3DN71LonL+UtMG9AAgl1hPnrvWhNOcHnoPtwiVFiqQ7S394AUjcZg4DuSiGbUoFUYpLKzMgYg==
+stylelint-config-primer@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-primer/-/stylelint-config-primer-11.0.0.tgz#885f8a739645fb1a41c710186b1c6a0186302cd2"
+  integrity sha512-TNxVIVowEc5GCoBLln4jeOnjEdsbPafTsf/XRepdc6lDubVkCf/GEC78rxWtd4lAaoYjKafeweZInpCjdQ1yyQ==
   dependencies:
     anymatch "^3.1.1"
     globby "^11.0.1"
