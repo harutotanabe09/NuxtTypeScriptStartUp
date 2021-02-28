@@ -5,13 +5,13 @@ jobs:
   build:
     executor:
         name: node/node
-        tag: latest
+        tag: 'latest'
     working_directory: ~/repo
     steps:
       - checkout
       - node/install:
           install-yarn: true
-      - node/with-cache:
+      - node/with_cache:
           dir: ~/repo/node_modules
           cache-version: v1
           steps:
