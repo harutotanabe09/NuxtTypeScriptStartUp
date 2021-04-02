@@ -30,7 +30,7 @@
     "core-js": "^3.8.3",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.15.4",
     "vue-chartjs": "^3.5.1"
   },
   "devDependencies": {
