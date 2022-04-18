@@ -27,7 +27,7 @@
     "@nuxtjs/axios": "^5.12.5",
     "chart.js": "^2.9.4",
     "chartjs-plugin-datalabels": "^0.7.0",
-    "core-js": "^3.8.3",
+    "core-js": "^3.22.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "nuxt": "^2.14.12",
